@@ -6,14 +6,22 @@ class PresentVerbGenerator:
         prefixes = PresentVerbIndicators.prefixes
         suffixes = PresentVerbIndicators.suffixes 
 
-        # Remove the last char if present
+        # Replace the first diacritic char with SUKUN
+        root = root[0] + Common.SUKUN + root[2:]
+
+        # Remove the last diacritic char if present
         if root[-1] in (Common.KASRA + Common.FATHA + Common.DAMMA):
             root = root[:-1]
     
         # Generate conjugations
         conjugations = []
+
         for i in range(len(suffixes)):
-            conjugated = f"{prefixes[i]}{root}{suffixes[i]}"
+            if i == 3:
+                conjugated = f"{prefixes[i]}{root}{Common.KASRA}{suffixes[i]}"
+            else:
+                conjugated = f"{prefixes[i]}{root}{suffixes[i]}"
+            
             conjugations.append(f"{conjugated}")
     
         return conjugations
