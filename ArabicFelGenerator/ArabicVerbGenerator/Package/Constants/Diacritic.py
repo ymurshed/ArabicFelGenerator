@@ -1,4 +1,4 @@
-﻿class Common:
+﻿class Diacritic:
     KASRA       = "ِ"
     FATHA       = "َ"
     DAMMA       = "ُ"

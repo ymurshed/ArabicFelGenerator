@@ -1,5 +1,5 @@
-﻿from .Common import Common
+﻿from .Diacritic import Diacritic
 
 class PresentVerbIndicators:
     prefixes = ["يَ", "تَ", "تَ", "تَ", "أَ"]
-    suffixes = [Common.DAMMA, Common.DAMMA, Common.DAMMA, "يْنَ", Common.DAMMA]
+    suffixes = [Diacritic.DAMMA, Diacritic.DAMMA, Diacritic.DAMMA, "يْنَ", Diacritic.DAMMA]

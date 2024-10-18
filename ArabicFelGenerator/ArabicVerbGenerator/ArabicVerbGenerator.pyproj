@@ -22,7 +22,8 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Package\Constants\Common.py" />
+    <Compile Include="Package\Constants\Bab.py" />
+    <Compile Include="Package\Constants\Diacritic.py" />
     <Compile Include="Package\Constants\PresentVerbIndicators.py" />
     <Compile Include="Package\Constants\PastVerbIndicators.py" />
     <Compile Include="Package\VerbGenerator\PresentVerbGenerator.py" />
